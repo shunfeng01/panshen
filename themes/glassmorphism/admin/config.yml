@@ -7,6 +7,11 @@ backend:
 
 local_backend: false
 
+media_folder: "themes/glassmorphism/images"
+public_folder: "/images"
+media_library:
+  name: default
+
 collections:
   - name: categories
     label: 资源分类与链接
