@@ -28,11 +28,11 @@ collections:
             widget: list
             fields:
               - { name: name, label: 分类名称, widget: string }
-              - { name: icon, label: 图标（emoji）, widget: string }
+              - { name: icon, label: 图标emoji, widget: string }
               - { name: desc, label: 分类描述, widget: string }
-              - { name: url, label: 链接地址（夸克网盘分享链接）, widget: string }
+              - { name: url, label: 链接地址, widget: string }
           - name: links
-            label: 底部快捷链接
+            label: 快捷链接
             widget: list
             fields:
               - name: link
