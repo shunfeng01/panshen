@@ -2,7 +2,7 @@ backend:
   name: github
   repo: shunfeng01/panshen
   branch: main
-  base_url: https://pan-admin.placeholder.workers.dev
+  base_url: https://pan-admin.3013628741.workers.dev
   auth_endpoint: api/auth
 
 local_backend: false
