@@ -1,0 +1,54 @@
+backend:
+  name: github
+  repo: shunfeng01/panshen
+  branch: main
+  base_url: https://pan-admin.placeholder.workers.dev
+  auth_endpoint: api/auth
+
+local_backend: false
+
+collections:
+  - name: categories
+    label: 资源分类与链接
+    files:
+      - name: config
+        label: 站点配置
+        file: config.yml
+        format: yaml
+        fields:
+          - { name: title, label: 站点名称, widget: string }
+          - { name: tagline, label: 站点标语, widget: text }
+          - name: categories
+            label: 首页分类卡片
+            widget: list
+            fields:
+              - { name: name, label: 分类名称, widget: string }
+              - { name: icon, label: 图标（emoji）, widget: string }
+              - { name: desc, label: 分类描述, widget: string }
+              - { name: url, label: 链接地址（夸克网盘分享链接）, widget: string }
+          - name: links
+            label: 底部快捷链接
+            widget: list
+            fields:
+              - name: link
+                widget: object
+                fields:
+                  - { name: icon, label: 图标, widget: string }
+                  - { name: text, label: 文字, widget: string }
+                  - { name: url, label: 链接, widget: string }
+                  - { name: alt, label: 说明, widget: string }
+                  - { name: title, label: 标题, widget: string }
+                  - { name: target, label: 打开方式, widget: select, options: ["_blank", "_self"], default: "_blank" }
+          - name: socials
+            label: 社交按钮
+            widget: list
+            fields:
+              - name: social
+                widget: object
+                fields:
+                  - { name: icon, label: 图标, widget: string }
+                  - { name: url, label: 链接, widget: string }
+                  - { name: title, label: 标题, widget: string }
+                  - { name: alt, label: 说明, widget: string }
+                  - { name: target, label: 打开方式, widget: select, options: ["_blank", "_self"], default: "_blank" }
+          - { name: footer, label: 页脚文字, widget: text }
