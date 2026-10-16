@@ -4,6 +4,23 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>盘神AI资源站后台管理</title>
+  <script>
+  (function () {
+    if (typeof window.crypto === "undefined") { window.crypto = {}; }
+    if (!window.crypto.randomUUID) {
+      window.crypto.randomUUID = function () {
+        var b = new Uint8Array(16);
+        if (window.crypto.getRandomValues) { window.crypto.getRandomValues(b); }
+        else { for (var i = 0; i < 16; i++) { b[i] = Math.floor(Math.random() * 256); } }
+        b[6] = (b[6] & 0x0f) | 0x40;
+        b[8] = (b[8] & 0x3f) | 0x80;
+        var h = [];
+        for (var j = 0; j < 256; j++) { h[j] = (j + 0x100).toString(16).substr(1); }
+        return h[b[0]] + h[b[1]] + h[b[2]] + h[b[3]] + "-" + h[b[4]] + h[b[5]] + "-" + h[b[6]] + h[b[7]] + "-" + h[b[8]] + h[b[9]] + "-" + h[b[10]] + h[b[11]] + h[b[12]] + h[b[13]] + h[b[14]] + h[b[15]];
+      };
+    }
+  })();
+  </script>
 </head>
 <body>
   <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
