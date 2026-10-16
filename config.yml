@@ -1,118 +1,109 @@
-# 盘神AI资源站 — 配置文件（后台可编辑）
-theme: glassmorphism
-lang: "zh-CN"
+plugins: null
 color_scheme: auto
-plugins:
-
-title: "盘神AI资源站"
-avatar: "./images/profile.jpeg"
-name: "盘神AI资源站"
-tagline: >-
-    免费分享影视、软件、学习资料、AI工具、网赚项目等优质资源，全部夸克网盘直链下载。
-
-# ===== 首页分类卡片（后台可增删改）=====
-categories:
-  - name: "影视资源"
-    icon: "🎬"
-    desc: "最新电影、热门电视剧、综艺节目、动漫纪录片，持续更新"
-    url: "#"
-  - name: "软件工具"
-    icon: "💻"
-    desc: "PC软件、手机应用、效率工具、办公软件，绿色无广告版本"
-    url: "#"
-  - name: "学习资料"
-    icon: "📚"
-    desc: "考试资料、学习课件、技能教程、电子书籍，助力提升自我"
-    url: "#"
-  - name: "AI工具"
-    icon: "🤖"
-    desc: "AI绘画、AI写作、AI编程、各类人工智能工具和模型分享"
-    url: "#"
-  - name: "网赚项目"
-    icon: "💰"
-    desc: "副业项目、赚钱思路、实操教程，带你开启额外收入"
-    url: "#"
-  - name: "教程课程"
-    icon: "🎓"
-    desc: "视频教程、培训课程、技能教学，从入门到精通"
-    url: "#"
-  - name: "文章资讯"
-    icon: "📝"
-    desc: "优质文章、干货分享、行业资讯，阅读提升认知"
-    url: "#"
-  - name: "更多分类"
-    icon: "✨"
-    desc: "更多资源分类正在整理中，敬请期待"
-    url: "#"
-
-links:
-  - link:
-      icon: "fa-solid fa-film"
-      text: "🎬 影视资源"
-      url: "#"
-      alt: "影视资源合集"
-      title: "影视资源合集"
-      target: "_blank"
-  - link:
-      icon: "fa-solid fa-laptop-code"
-      text: "💻 软件工具"
-      url: "#"
-      alt: "软件工具合集"
-      title: "软件工具合集"
-      target: "_blank"
-  - link:
-      icon: "fa-solid fa-book"
-      text: "📚 学习资料"
-      url: "#"
-      alt: "学习资料合集"
-      title: "学习资料合集"
-      target: "_blank"
-  - link:
-      icon: "fa-solid fa-robot"
-      text: "🤖 AI工具"
-      url: "#"
-      alt: "AI工具合集"
-      title: "AI工具合集"
-      target: "_blank"
-  - link:
-      icon: "fa-solid fa-money-bill-trend-up"
-      text: "💰 网赚项目"
-      url: "#"
-      alt: "网赚项目合集"
-      title: "网赚项目合集"
-      target: "_blank"
-  - link:
-      icon: "fa-solid fa-graduation-cap"
-      text: "🎓 教程课程"
-      url: "#"
-      alt: "教程课程合集"
-      title: "教程课程合集"
-      target: "_blank"
-  - link:
-      icon: "fa-solid fa-newspaper"
-      text: "📰 文章资讯"
-      url: "#"
-      alt: "文章资讯"
-      title: "文章资讯"
-      target: "_blank"
-
 socials:
   - social:
-      icon: "fa-brands fa-weibo"
+      icon: fa-brands fa-weibo
       url: "#"
-      title: "微博"
-      alt: "微博"
-      target: "_blank"
+      title: 微博
+      alt: 微博
+      target: _blank
   - social:
-      icon: "fa-solid fa-envelope"
-      url: "mailto:3013628741@qq.com"
-      title: "邮箱联系"
-      alt: "邮箱联系"
-      target: "_blank"
-
-footer: >
-    所有资源均来自网络收集，仅供学习交流使用，请于下载后24小时内删除。
-    <br>如有侵权请联系删除。
-
+      icon: fa-solid fa-envelope
+      url: mailto:3013628741@qq.com
+      title: 邮箱联系
+      alt: 邮箱联系
+      target: _blank
 copyright: >
-  © {{ year }} <a href="#" target="_blank">盘神AI资源站</a>. Powered by <a href="https://github.com/ZhgChgLi/linkyee" target="_blank">linkyee</a>
+  © {{ year }} <a href="#" target="_blank">盘神AI资源站</a>. Powered by <a
+  href="https://github.com/ZhgChgLi/linkyee" target="_blank">linkyee</a>
+theme: glassmorphism
+name: 盘神AI资源站
+lang: zh-CN
+title: 盘神AI资源站
+tagline: 免费分享影视、软件、学习资料、AI工具、网赚项目等优质资源，全部网盘直链下载。
+avatar: ./images/profile.jpeg
+categories:
+  - name: 影视资源
+    icon: 🎬
+    desc: 最新电影、热门电视剧、综艺节目、动漫纪录片，持续更新
+    url: "#"
+  - name: 软件工具
+    icon: 💻
+    desc: PC软件、手机应用、效率工具、办公软件，绿色无广告版本
+    url: "#"
+  - name: 学习资料
+    icon: 📚
+    desc: 考试资料、学习课件、技能教程、电子书籍，助力提升自我
+    url: "#"
+  - name: AI工具
+    icon: 🤖
+    desc: AI绘画、AI写作、AI编程、各类人工智能工具和模型分享
+    url: "#"
+  - name: 网赚项目
+    icon: 💰
+    desc: 副业项目、赚钱思路、实操教程，带你开启额外收入
+    url: "#"
+  - name: 教程课程
+    icon: 🎓
+    desc: 视频教程、培训课程、技能教学，从入门到精通
+    url: "#"
+  - name: 文章资讯
+    icon: 📝
+    desc: 优质文章、干货分享、行业资讯，阅读提升认知
+    url: "#"
+  - name: 更多分类
+    icon: ✨
+    desc: 更多资源分类正在整理中，敬请期待
+    url: "#"
+links:
+  - link:
+      icon: fa-solid fa-film
+      text: 🎬 影视资源
+      url: "#"
+      alt: 影视资源合集
+      title: 影视资源合集
+      target: _blank
+  - link:
+      icon: fa-solid fa-laptop-code
+      text: 💻 软件工具
+      url: "#"
+      alt: 软件工具合集
+      title: 软件工具合集
+      target: _blank
+  - link:
+      icon: fa-solid fa-book
+      text: 📚 学习资料
+      url: "#"
+      alt: 学习资料合集
+      title: 学习资料合集
+      target: _blank
+  - link:
+      icon: fa-solid fa-robot
+      text: 🤖 AI工具
+      url: "#"
+      alt: AI工具合集
+      title: AI工具合集
+      target: _blank
+  - link:
+      icon: fa-solid fa-money-bill-trend-up
+      text: 💰 网赚项目
+      url: "#"
+      alt: 网赚项目合集
+      title: 网赚项目合集
+      target: _blank
+  - link:
+      icon: fa-solid fa-graduation-cap
+      text: 🎓 教程课程
+      url: "#"
+      alt: 教程课程合集
+      title: 教程课程合集
+      target: _blank
+  - link:
+      icon: fa-solid fa-newspaper
+      text: 📰 文章资讯
+      url: "#"
+      alt: 文章资讯
+      title: 文章资讯
+      target: _blank
+footer: |
+  所有资源均来自网络收集，仅供学习交流使用，请于下载后24小时内删除。 <br>如有侵权请联系3013628741@qq.com删除。
